@@ -129,11 +129,11 @@ export const blogs = [
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+  { href: "https://x.com/TechnocratSoc", text: "X", isIcon:true },
+  { href: "https://www.instagram.com/thetechnocratsclub/?utm_source=ig_web_button_share_sheet", text: "Instagram", isIcon:true},
+  { href: "#", text: "" },
+  { href: "#", text: "" },
+  { href: "#", text: "" },
 ];
 
 export const platformLinks = [

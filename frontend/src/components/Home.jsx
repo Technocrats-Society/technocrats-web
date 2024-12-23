@@ -14,8 +14,8 @@ const Home = () => {
           className="bg-gradient-to-r text-[#d4a373] bg-clip-text"
         />
       </h1>
-      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-        Under Development
+      <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl pb-28">
+      Technocrats focus on leveraging science and technology to solve industry and societal challenges, uniting visionaries to inspire and deliver impactful solutions. We prioritize logic, evidence, and strategic implementation for a better future.
       </p>
       {/* <div className="flex justify-center my-10">
         <a
