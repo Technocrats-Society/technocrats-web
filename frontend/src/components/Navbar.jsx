@@ -16,7 +16,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center flex-shrink-0">
             <img className="h-16 w-16 mr-2" src={logo} alt="Logo" />
-            <span className="text-2xl tracking-tight text-[#d4a373]">Technocrats</span>
+            <span className="text-2xl tracking-tight text-[#d4a373]">
+              Technocrats
+            </span>
           </div>
           <ul className="hidden lg:flex ml-14 space-x-12 text-[#d4a373]">
             {navItems.map((item, index) => (
@@ -26,7 +28,10 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            <a href="#" className="py-2 px-3 border rounded-md bg-[#d4a373] hover:bg-[#e9edc9]" >
+            <a
+              href="#"
+              className="py-2 px-3 border rounded-md bg-[#d4a373] hover:bg-[#e9edc9]"
+            >
               Sign In
             </a>
             <a

@@ -123,14 +123,19 @@ export const events = [
 export const blogs = [
   {
     title: "Understanding React HooksThe AI revolution and its Economic impact",
-    description: "A comprehensive guide to using hooks in React to manage state and side effects.",
+    description:
+      "A comprehensive guide to using hooks in React to manage state and side effects.",
     link: "/blogs/react-hooks",
   },
 ];
 
 export const resourcesLinks = [
-  { href: "https://x.com/TechnocratSoc", text: "X", isIcon:true },
-  { href: "https://www.instagram.com/thetechnocratsclub/?utm_source=ig_web_button_share_sheet", text: "Instagram", isIcon:true},
+  { href: "https://x.com/TechnocratSoc", text: "X", isIcon: true },
+  {
+    href: "https://www.instagram.com/thetechnocratsclub/?utm_source=ig_web_button_share_sheet",
+    text: "Instagram",
+    isIcon: true,
+  },
   { href: "#", text: "" },
   { href: "#", text: "" },
   { href: "#", text: "" },

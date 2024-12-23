@@ -4,7 +4,8 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20 bg-">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
-        Welcome to<br/>
+        Welcome to
+        <br />
         <ReactTypingEffect
           text={["Technocrats Society"]}
           speed={100} // Typing speed
@@ -15,7 +16,10 @@ const Home = () => {
         />
       </h1>
       <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl pb-28">
-      Technocrats focus on leveraging science and technology to solve industry and societal challenges, uniting visionaries to inspire and deliver impactful solutions. We prioritize logic, evidence, and strategic implementation for a better future.
+        Technocrats focus on leveraging science and technology to solve industry
+        and societal challenges, uniting visionaries to inspire and deliver
+        impactful solutions. We prioritize logic, evidence, and strategic
+        implementation for a better future.
       </p>
       {/* <div className="flex justify-center my-10">
         <a

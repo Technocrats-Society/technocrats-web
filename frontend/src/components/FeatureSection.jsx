@@ -8,7 +8,7 @@ const FeatureSection = () => {
           About Us
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-          What is the meaning of being a {" "}
+          What is the meaning of being a{" "}
           <span className="bg-gradient-to-r bg-[#d4a373] text-transparent bg-clip-text">
             Technocrat ?
           </span>
