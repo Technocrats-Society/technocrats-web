@@ -9,11 +9,11 @@ const AppRoutes = () => {
   return (
     <Router basename="/technocrats-web">
       <Routes>
-        <Route path="/technocrats-web/" element={<Home />} />
-        <Route path="/technocrats-web/features" element={<FeatureSection />} />
-        <Route path="/technocrats-web/events" element={<Events />} />
-        <Route path="/technocrats-web/blogs" element={<Blogs />} />
-        <Route path="/technocrats-web/vision" element={<Vision />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<FeatureSection />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/vision" element={<Vision />} />
       </Routes>
     </Router>
   );
