@@ -13,10 +13,10 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Events", href: "/events" },
-  { label: "Blogs", href: "/blogs" },
-  { label: "Vision", href: "/vision" },
+  { label: "Home", href: "/technocrats-web/" },
+  { label: "Events", href: "/technocrats-web/events" },
+  { label: "Blogs", href: "/technocrats-web/blogs" },
+  { label: "Vision", href: "/technocrats-web/vision" },
 ];
 
 export const vision = [
