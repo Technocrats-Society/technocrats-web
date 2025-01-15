@@ -7,7 +7,7 @@ import FeatureSection from "../components/FeatureSection";
 
 const AppRoutes = () => {
   return (
-    <Router basename="/technocrats-web">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<FeatureSection />} />
