@@ -1,24 +1,26 @@
+<!-- 404.html -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script>
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
+      // Store the segment count (usually 1 for GitHub Pages)
+      const pathSegmentsToKeep = 1;
+
+      const l = window.location;
       
-      // This script takes the current URL and converts it into the form that
-      // index.html can handle using the `?p=` query parameter
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
+      // Store the URL in sessionStorage
+      sessionStorage.redirect = l.pathname + l.search + l.hash;
+
+      // Calculate the new path
+      const cleanPath = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+      
+      // Redirect to the main page
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        cleanPath + '/'
+      );
     </script>
   </head>
   <body>
