@@ -1,18 +1,29 @@
+<!-- 404.html -->
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Redirecting...</title>
-  <script>
-    const segment = 1;
-    const l = window.location;
-    l.replace(
-      l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + segment).join('/') + '/?p=/' +
-      l.pathname.slice(1).split('/').slice(segment).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
-    );
-  </script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Store the segment count (usually 1 for GitHub Pages)
+      const pathSegmentsToKeep = 1;
+
+      const l = window.location;
+      
+      // Store the URL in sessionStorage
+      sessionStorage.redirect = l.pathname + l.search + l.hash;
+
+      // Calculate the new path
+      const cleanPath = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+      
+      // Redirect to the main page
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        cleanPath + '/'
+      );
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
 </html>
